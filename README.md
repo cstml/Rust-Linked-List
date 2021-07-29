@@ -16,6 +16,8 @@ You can simply build it like you would any other project with:
 cargo run
 # or 
 cargo build && ./target/debug/linked_list_example
+# or if you are nix inclined
+nix-build
 ```
 
 ## But why?
