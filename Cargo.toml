@@ -1,0 +1,20 @@
+[package]
+name = "linked-list"
+version = "0.1.0"
+authors = ["cstml <cstmlcodes@gmail.com>"]
+edition = "2018"
+publish = false
+readme  = "README.md"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+  name = "linked_list"
+  path = "src/linked_list.rs"
+
+[[test]]
+  name = "basic-tests"
+  path = "src/test.rs"
+  
+[[bin]]
+  name = "linked_list_example"
+  path = "app/Main.rs"
