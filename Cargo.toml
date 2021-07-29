@@ -1,11 +1,10 @@
 [package]
-name = "linked-list"
-version = "0.1.0"
-authors = ["cstml <cstmlcodes@gmail.com>"]
-edition = "2018"
-publish = false
-readme  = "README.md"
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+  name = "linked-list"  
+  version = "0.1.0"
+  authors = ["cstml <cstmlcodes@gmail.com>"]
+  edition = "2018"
+  publish = false
+  readme  = "README.md"
 
 [lib]
   name = "linked_list"
@@ -15,6 +14,6 @@ readme  = "README.md"
   name = "basic-tests"
   path = "src/test.rs"
   
-[[bin]]
+[[example]]
   name = "linked_list_example"
   path = "app/Main.rs"
