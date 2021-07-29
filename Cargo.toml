@@ -14,6 +14,6 @@
   name = "basic-tests"
   path = "src/test.rs"
   
-[[example]]
+[[bin]]
   name = "linked_list_example"
   path = "app/Main.rs"

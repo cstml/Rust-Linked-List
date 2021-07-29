@@ -29,5 +29,10 @@ pub fn main () {
     // Linking Polymorphic Node of Nodes 
     let pnFst = p::link_nodes (_pnFst, _pnSnd);
 
-    println!("And the last one: {:?}", pnFst);
+    println!("And the last one: {:?}", &pnFst);
+
+    // Let's get the 2nd element of pnFst
+
+    let nElement = 1;
+    println!("Element {:?} is: {:?}", nElement, p::get_node(1,&pnFst));
 }
