@@ -104,12 +104,15 @@ pub mod polymorphic_linked_list  {
         }
     }
 
-    /// Equivalent of !! in Haskell.
-    pub fn get_node <A> (a: i32, x: &Node<A>) -> &Node<A>{
-        if a < 0 { x }
-        else {
+    /// Equivalent of !! in Haskell, but this time we are failing safely for the
+    /// outterlying casese.
+    pub fn get_node <A> (a: i32, x: &Node<A>) -> Option<&Node<A>>{
+        if a <  0 { None
+        } else if a == 0 {
+            Some (&x)
+        } else {
             match &x.next_node {
-                None => &x,
+                None => None,
                 Some (c) => get_node (a-1, &c)
             }
         }
